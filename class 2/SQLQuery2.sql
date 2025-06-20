@@ -11,3 +11,6 @@ update students set city = 'karachi' where [students.stdname] = 'ali' OR email =
 update students set salary = salary + 5000 where salary >= 55000
 update students set salary = salary + 5000 where salary >= 50000
 update students set salary = 45000 where id = 4 OR id = 5
+
+
+update students set salary = salary + 50000 where department != 'SE'
