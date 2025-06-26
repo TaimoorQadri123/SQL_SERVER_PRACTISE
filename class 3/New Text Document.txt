@@ -17,3 +17,4 @@ select min(salary) as 'Minimum ' from students
 select max(salary) as maximum  from students
 select avg(salary) as average  from students
 
+ 
