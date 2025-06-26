@@ -18,4 +18,25 @@ foreign key(f_id) references faculty(id)
 
 )
 select * from std
-insert into faculty values('ali',5000,'CS','Lahore',1),('sana',100000,'SE','Quetta',2),('Hamza',40000,'CS','Karachi',3),('Aqsa',40000,'CS','Karachi',1)
+
+insert into std (name,salary,department,city)values
+('Hafsa',40000,'SE','Lahore'),
+('Amna',40000,'CS','Quetta')
+
+
+
+SELECT 
+    std.id, 
+    std.name AS studentName, 
+    std.salary, 
+    std.department, 
+    faculty.name AS facultyName 
+FROM 
+    std
+INNER JOIN 
+    faculty 
+ON 
+    std.f_id = faculty.id;
+
+
+
