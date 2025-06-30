@@ -1,7 +1,0 @@
-use aptech
-select * from students
-select min(salary) as minimum ,[students.stdname] = min(salary[students.stdname])  from students
-select min(salary) , [students.stdname]  from students
-
-
-select * from students where salary = (select min(salary) from students)
